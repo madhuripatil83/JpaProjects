@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\Users\\Dell\\Documents\\workspace-spring-tool-suite-4-4.27.0.RELEASE\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=C\:\\Users\\Dell\\Documents\\workspace-spring-tool-suite-4-4.27.0.RELEASE\\OneToMany\\.git;C\:\\Users\\Dell\\Downloads\\OneToMany\\OneToMany\\.git;C\:\\Users\\Dell\\Documents\\workspace-spring-tool-suite-4-4.27.0.RELEASE\\.git;
+GitRepositoriesView.GitDirectories.relative=OneToMany\\.git;C\:\\Users\\Dell\\Downloads\\OneToMany\\OneToMany\\.git;.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
