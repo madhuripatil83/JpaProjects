@@ -1,0 +1,41 @@
+package com.example.demo;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.demo.repo.EmployeeService;
+
+
+@SpringBootApplication
+public class JpaDemoApplication implements CommandLineRunner {
+
+	@Autowired
+	private  EmployeeService service;
+	
+	public static void main(String[] args) {
+	//var ctx = SpringApplication.run(JpaDemoApplication.class, args);
+	//EmployeeService service=ctx.getBean(EmployeeService.class);
+//		Employee emp1 = new Employee();
+//		//emp1.getEmpId();
+//		emp1.setEmpName("john");
+//		
+      //service.saveEmployee();
+//		//System.out.println(emp1);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+//
+//		Employee emp1 = new Employee();
+//		//emp1.setEmpId(1);
+//		emp1.setEmpName("john");
+//		
+//		emp1.getEmpId();
+//		
+		service.saveEmployee();
+//		
+	}
+
+}

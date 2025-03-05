@@ -1,0 +1,42 @@
+package com.example.demo;
+
+import java.io.Serial;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.demo.repo.EmployeeService;
+
+
+@SpringBootApplication
+public class JpaDemoApplication {
+
+	@Autowired
+	private static EmployeeService service;
+	
+	public static void main(String[] args) {
+		var ctx = SpringApplication.run(JpaDemoApplication.class, args);
+		
+		Employee emp1 = ctx.getBean(Employee.class);
+		emp1.getEmpId();
+		emp1.setEmpName("john");
+		
+		service.saveEmployee(emp1);
+		System.out.println(emp1);
+	}
+
+//	@Override
+//	public void run(String... args) throws Exception {
+//
+//		Employee emp1 = new Employee();
+//		//emp1.setEmpId(1);
+//		emp1.setEmpName("john");
+//		
+//		emp1.getEmpId();
+//		
+//		service.saveEmployee(emp1);
+//		
+//	}
+
+}

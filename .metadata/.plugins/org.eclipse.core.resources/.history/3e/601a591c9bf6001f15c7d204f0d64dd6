@@ -1,0 +1,30 @@
+package com.example.demo.repo;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Employee;
+
+@Service
+public class EmployeeService {
+
+	@Autowired
+	public EmployeeRepo repo;
+	
+	
+	//INSERT
+	public Employee saveEmployee() {
+		
+		Employee employee = new Employee();
+		employee.setEmpName("Tim");
+		return repo.save(employee);
+	}
+	
+	
+	public Optional<Employee> getEmployeeById(int id) {
+		return repo.findById(id);
+	}
+	
+}

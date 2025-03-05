@@ -1,0 +1,20 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Citizen;
+import com.example.demo.entity.Passport;
+import com.example.demo.repo.PassportRepository;
+
+@Service
+public class PassportService {
+	
+	@Autowired
+	private PassportRepository repo;
+	
+	public Passport savePassport(Passport passport) {
+		return repo.save(passport);
+	}
+
+}

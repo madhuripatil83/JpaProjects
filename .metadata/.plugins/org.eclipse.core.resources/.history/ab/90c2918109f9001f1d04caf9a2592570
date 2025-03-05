@@ -1,0 +1,20 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.Items;
+import com.example.demo.repo.ItemsRepository;
+
+@Service
+public class ItemsService {
+
+	@Autowired
+	private ItemsRepository repo;
+
+	public Items addItems(Items item) {
+
+		return repo.save(item);
+	}
+
+}

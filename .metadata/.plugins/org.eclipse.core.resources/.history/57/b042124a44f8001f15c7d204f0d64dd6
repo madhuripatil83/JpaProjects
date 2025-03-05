@@ -1,0 +1,27 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.example.demo.entity.Citizen;
+import com.example.demo.entity.Passport;
+import com.example.demo.service.CitizenService;
+import com.example.demo.service.PassportService;
+
+@SpringBootApplication
+public class OnetoOneBidirectionalApplication {
+
+	public static void main(String[] args) {
+		 ApplicationContext context = SpringApplication.run(OnetoOneBidirectionalApplication.class, args);
+		 PassportService passportService = context.getBean(PassportService.class);
+		 CitizenService citizenService = context.getBean(CitizenService.class);
+		 
+		 Citizen citizen = new Citizen();
+		 
+		 
+		 Passport passport= new Passport()
+		
+	}
+
+}
