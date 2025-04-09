@@ -60,6 +60,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Dell\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\demoPaymentService"/>
+			<item value="C:\Users\Dell\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\demoEmailService"/>
+			<item value="C:\Users\Dell\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\spring-ec2"/>
 			<item value="C:\Users\Dell\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\demoApiGateway"/>
 			<item value="C:\Users\Dell\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\demoMicroService"/>
 		</list>
