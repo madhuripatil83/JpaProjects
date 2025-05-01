@@ -19,7 +19,7 @@ public class Student {
 	private String name;
 	private int mobile;
 
-	@OneToOne   //by default this is EAGER loading
+	 @OneToOne(fetch=FetchType.LAZY) //by default this is EAGER loading
 	@JoinColumn(name = "address_id")
 	private Address address;
 

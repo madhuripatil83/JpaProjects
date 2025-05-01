@@ -30,7 +30,7 @@ public class One2oneApplication implements CommandLineRunner {
 	}
 
 	@Override
-	//@Transactional
+	@Transactional
 	public void run(String... args) throws Exception {
 		
 		

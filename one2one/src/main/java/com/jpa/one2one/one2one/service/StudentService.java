@@ -25,7 +25,7 @@ public class StudentService {
 	
 	@Transactional
 	public Optional<Student> fetchStudentRecord() {
-		return Optional.of(repo.findById(6).get());
+		return Optional.of(repo.findById(1).get());
 	}
 
 }

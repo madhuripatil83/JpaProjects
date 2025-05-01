@@ -7,6 +7,7 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
@@ -18,7 +19,7 @@ import lombok.ToString;
 @Setter
 @Entity
 @Table(name = "drivers")
-public class Driver {
+public class Driver {   //owner side
 
 	
 	@Id
@@ -38,5 +39,6 @@ public class Driver {
             // through to the Car
             cascade = CascadeType.PERSIST
     )
+   // @JoinColumn
     private Car car;
 }

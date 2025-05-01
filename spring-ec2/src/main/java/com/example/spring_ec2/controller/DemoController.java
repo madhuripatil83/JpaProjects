@@ -8,7 +8,7 @@ public class DemoController {
 	
 	@GetMapping
 	public String helloWorld() {
-		return " Hello aws";
+		return " Hello aws spring boot here";
 	}
 
 }
